@@ -236,6 +236,12 @@ p  { margin: 0 0 1em; }
 @media (min-width: 880px) {
   .about-grid { grid-template-columns: 1.05fr 1fr; gap: 64px; }
 }
+.about-photos { position: relative; }
+.about-photo-small {
+  width: 62%;
+  margin: 20px 0 0 auto;
+  position: relative;
+}
 .signature {
   font-family: var(--font-hand);
   font-size: 1.7rem;
