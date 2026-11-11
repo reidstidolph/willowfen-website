@@ -25,7 +25,7 @@ To use your own domain (for example `willowfenfarm.com`), enter it under **Setti
 Search `index.html` for these:
 
 - **Logo**: `images/logo.png` (dark, for light backgrounds) and `images/logo-light.png` (cream, for the photo banner and footer). Replace both if the logo changes.
-- **Contact info**: the `CONTACT INFO:` section has a placeholder email (`hello@example.com`), phone (`(509) 555-0123`) and Instagram link/handle.
+- **Instagram**: the `CONTACT INFO:` section still has a placeholder Instagram link and handle.
 - **Market days and hours**: the "When" line in the market section.
 - **The writing**: the About and product text is a starting draft. Change anything that isn't quite right for your farm.
 
