@@ -1,6 +1,6 @@
 # Willow Fen Farm website
 
-A simple static website for Willow Fen Farm in Plain, Washington. It's plain HTML and CSS with no build step, so it works on GitHub Pages as-is.
+A simple static website for Willow Fen Farm at Lake Wenatchee, Washington. It's plain HTML and CSS with no build step, so it works on GitHub Pages as-is.
 
 ## Files
 
