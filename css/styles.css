@@ -114,8 +114,7 @@ p  { margin: 0 0 1em; }
   color: var(--forest-dk);
   padding: 8px 0;
 }
-.brand-mark { color: var(--forest); display: flex; }
-.brand-logo { height: 52px; width: auto; }
+.brand-logo { height: 54px; width: auto; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-name { font-family: var(--font-head); font-weight: 700; font-size: 1.45rem; }
 .brand-sub {
@@ -178,6 +177,12 @@ p  { margin: 0 0 1em; }
   padding-top: 120px;
   padding-bottom: clamp(48px, 9vh, 96px);
   width: 100%;
+}
+.hero-logo {
+  width: clamp(110px, 16vw, 160px);
+  height: auto;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,.45));
 }
 .hero-kicker {
   font-family: var(--font-hand);
@@ -253,7 +258,10 @@ p  { margin: 0 0 1em; }
 .cards {
   display: grid;
   gap: 28px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }
 .card {
   background: #fffaf0;
@@ -292,8 +300,19 @@ p  { margin: 0 0 1em; }
 @media (min-width: 880px) {
   .market-grid { grid-template-columns: .8fr 1.2fr; gap: 72px; }
 }
-.market-photo { max-width: 380px; margin: 0 auto; }
-.market-photo img { aspect-ratio: 4 / 5; object-fit: cover; }
+.market-photos {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.market-photo img { aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 30%; }
+.market-photo-2 { margin-top: 48px; }
+@media (min-width: 880px) {
+  .market-grid { grid-template-columns: 1fr 1fr; }
+}
 .market-facts {
   list-style: none;
   padding: 0;
@@ -371,11 +390,9 @@ a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
   gap: 10px;
   font-family: var(--font-head);
   font-weight: 700;
-  font-size: 1.35rem;
-  color: var(--paper);
   margin-bottom: 8px;
 }
-.footer-brand svg { color: #f0b46b; }
+.footer-brand img { width: 120px; height: auto; }
 .footer-small { font-size: .85rem; opacity: .7; }
 
 @media (prefers-reduced-motion: reduce) {
