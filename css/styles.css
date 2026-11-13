@@ -282,7 +282,6 @@ p  { margin: 0 0 1em; }
   padding: 0 16px;
   color: var(--forest);
 }
-.divider-spaced { padding-top: clamp(48px, 7vw, 80px); }
 .divider span { flex: 1; height: 1px; background: var(--rule); }
 
 /* ---------- Cards ---------- */
